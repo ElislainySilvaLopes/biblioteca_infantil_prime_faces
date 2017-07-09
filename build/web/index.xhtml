@@ -10,6 +10,7 @@
     <h:head>
         <title>Biblioteca Infantil</title>
         <h:outputStylesheet name="css/jsfcrud.css"/>
+        <script src="http://maps.google.com/maps/api/js?sensor=true|false" type="text/javascript" />
     </h:head>
     <h:body>
 
@@ -20,13 +21,30 @@
                 <p>Nossa biblioteca possui conteúdo totalmtente voltadas as crianças.</p>
                 <br/>
                 <br/>
+                <br/>
                 <h:graphicImage value="/images/index.jpeg"/>
                 <br/>
                 <br/>
+                <br/>
+                <h2>Onde nos Encontrar?</h2>
+                <p>Rua Jaime Mafra, 100 Iapu - MG</p>
+                <p:gmap center="-19.4388185,-42.216445" zoom="15" type="hybrid"
+                        style="width:600px;height:400px" />
+                <br/>
+                <br/>
+                <br/>
+                <h2>Alguns dos nossos livros</h2>
+                <br/>
+                <p:carousel autoPlayInterval="3000" effect="easeInStrong" circular="true"
+                            itemStyle="width:600px" numVisible="1">
+                    <p:graphicImage value="/images/1-carrossel.jpeg"/>
+                    <p:graphicImage value="/images/2-carrossel.jpeg"/>
+                    <p:graphicImage value="/images/3-carrossel.jpeg"/>
+                </p:carousel>
 
             </p:layoutUnit>
 
-            <p:layoutUnit position="north" size="100">
+            <p:layoutUnit position="north" size="150">
                 <h:graphicImage value="/images/logo.jpeg"/>
             </p:layoutUnit>
 
